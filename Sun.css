@@ -1,0 +1,23 @@
+body{
+    background: url("Space.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.sun{
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    width: 100px;
+    height: 100px;
+    /* background:radial-gradient(red,orange); */
+    border-radius: 50%;
+    /* box-shadow: 15px 15px #333; */
+}
+img{
+    width: 100%;
+    border-radius: 50%;
+}

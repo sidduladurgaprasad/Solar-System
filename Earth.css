@@ -1,0 +1,38 @@
+
+.earth{
+    width: 13px;
+    height:13px;
+    /* background: radial-gradient(rgb(48, 160, 204),rgb(48, 161, 76)); */
+    border-radius: 50%;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+    /* transform: translateX(-100px); */
+    animation: Earth_Revolution 6s ease-in-out infinite;
+}
+@keyframes Earth_Revolution{
+    0%{
+        z-index: 0;
+        transform: translate(-50%,-50%) ;
+    }
+    25%{
+        
+        transform:translate(-50%,-50%) translate(-60px) ;
+    }
+    
+    50%{
+        z-index: 4;
+        transform:translate(-50%,-50%) rotateY;
+    }
+    75%{
+        z-index: 1;
+        transform:translate(-50%,-50%) translate(60px) ;
+
+    }
+    100%{
+        /* z-index: 4; */
+        transform:translate(-50%,-50%) ;
+    }
+
+}
